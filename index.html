@@ -139,17 +139,30 @@
       font-weight: 400;
     }
 
+    .contact {
+      text-align: center;
+      padding: 80px 20px 100px;
+    }
+
+    .contact-message {
+      font-size: 16px;
+      line-height: 2;
+      margin: 25px 0 10px;
+    }
+
     .contact-button {
       display: inline-block;
       background: #27bfd1;
-      color: white;
+      color: #fff;
       text-decoration: none;
-      padding: 12px 70px;
-      margin-top: 15px;
+      padding: 14px 55px;
+      margin-top: 20px;
+      border-radius: 4px;
+      transition: opacity 0.2s ease;
     }
 
-    .contact {
-      text-align: center;
+    .contact-button:hover {
+      opacity: 0.8;
     }
 
     footer {
@@ -177,6 +190,11 @@
 
       .card h3 {
         font-size: 22px;
+      }
+
+      .contact-button {
+        width: 100%;
+        max-width: 320px;
       }
     }
   </style>
@@ -343,10 +361,14 @@
 
     <div class="small-line"></div>
 
-    <p>お問い合わせはこちら</p>
+    <p class="contact-message">
+      アプリ・デザイン・その他のお問い合わせは、<br>
+      下のボタンからお気軽にご連絡ください。
+    </p>
 
-    <a class="contact-button"
-       href="mailto:YOUR_EMAIL_ADDRESS">
+    <a
+      class="contact-button"
+      href="mailto:YOUR_EMAIL_ADDRESS?subject=RESOANA%20お問い合わせ">
       メールで問い合わせ
     </a>
 
