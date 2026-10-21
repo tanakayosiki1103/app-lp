@@ -62,32 +62,34 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
+      align-items: start;
     }
 
     .card {
       text-align: left;
     }
 
-    .image-placeholder {
+    .logo-card img {
       width: 100%;
       aspect-ratio: 1 / 1;
-      background: #eeeeee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #777;
-      font-size: 18px;
+      object-fit: contain;
+      display: block;
+      background: #fff;
     }
 
-    .interior .image-placeholder {
+    .interior-card img {
+      width: 100%;
       aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
     }
 
     .card h3 {
-      font-size: 28px;
+      font-size: 25px;
       font-weight: 400;
       text-align: center;
-      margin: 14px 0 10px;
+      line-height: 1.5;
+      margin: 16px 0 12px;
     }
 
     .card p {
@@ -125,13 +127,11 @@
       margin: 0 auto;
     }
 
-    .profile-image {
-      aspect-ratio: 4 / 3;
-      background: #eee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #777;
+    .profile-box img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      display: block;
     }
 
     .profile-box h3 {
@@ -176,7 +176,7 @@
       }
 
       .card h3 {
-        font-size: 23px;
+        font-size: 22px;
       }
     }
   </style>
@@ -200,8 +200,8 @@
 
     <div class="cards">
 
-      <div class="card">
-        <img src="angou@2x.jpg" alt="Logo Design" style="width:100%; display:block;">
+      <div class="card logo-card">
+        <img src="angou@2x.jpg" alt="Logo Design 1">
 
         <h3>色や質感が統一されている</h3>
 
@@ -213,8 +213,8 @@
       </div>
 
 
-      <div class="card">
-        <img src="logo2.png" alt="Logo Design 2" style="width:100%; display:block;">
+      <div class="card logo-card">
+        <img src="logo2.png" alt="Logo Design 2">
 
         <h3>高い技術力</h3>
 
@@ -226,8 +226,8 @@
       </div>
 
 
-      <div class="card">
-        <img src="logo3.png" alt="Logo Design 3" style="width:100%; display:block;">
+      <div class="card logo-card">
+        <img src="logo3.png" alt="Logo Design 3">
 
         <h3>シンプルで覚えやすい</h3>
 
@@ -239,22 +239,19 @@
       </div>
 
     </div>
-
   </div>
 </section>
 
 
 <section class="interior">
-
   <div class="container">
 
     <h2>Interior Design</h2>
 
     <div class="cards">
 
-      <div class="card">
-
-        <img src="logo4.jpeg" alt="Interior Design 1" style="width:100%; display:block;">
+      <div class="card interior-card">
+        <img src="logo4.jpeg" alt="Interior Design 1">
 
         <h3>穏やかな時間を楽しむ</h3>
 
@@ -264,13 +261,11 @@
           新しい挑戦に向かって前進することで、
           自分自身を成長させることができます。
         </p>
-
       </div>
 
 
-      <div class="card">
-
-        <img src="logo5.jpeg" alt="Interior Design 2" style="width:100%; display:block;">
+      <div class="card interior-card">
+        <img src="logo5.jpeg" alt="Interior Design 2">
 
         <h3>自信と満足、好奇心を呼び覚ます</h3>
 
@@ -279,13 +274,11 @@
           自信と満足を感じることができます。
           未来に向かって楽観的に進むことができます。
         </p>
-
       </div>
 
 
-      <div class="card">
-
-        <img src="logo6.jpeg" alt="Interior Design 3" style="width:100%; display:block;">
+      <div class="card interior-card">
+        <img src="logo6.jpeg" alt="Interior Design 3">
 
         <h3>見た瞬間に感じる心地よい驚き</h3>
 
@@ -294,18 +287,14 @@
           わくわく感を生み出します。
           穏やかな雰囲気を大切にしています。
         </p>
-
       </div>
 
     </div>
-
   </div>
-
 </section>
 
 
 <section>
-
   <div class="container">
 
     <h2 class="profile-title">Profile</h2>
@@ -323,10 +312,9 @@
 
     <div class="profile-box">
 
-      <img src="logo7.jpg" alt="RESOANA Profile" style="width:100%; display:block;">
+      <img src="logo7.jpg" alt="RESOANA Profile">
 
       <div>
-
         <h3>RESOANA</h3>
 
         <p>Designer / Director</p>
@@ -341,27 +329,21 @@
         <a class="contact-button" href="#contact">
           Contact
         </a>
-
       </div>
 
     </div>
-
   </div>
-
 </section>
 
 
 <section id="contact" class="contact">
-
   <div class="container">
 
     <h2 class="contact-title">Contact</h2>
 
     <div class="small-line"></div>
 
-    <p>
-      お問い合わせはこちら
-    </p>
+    <p>お問い合わせはこちら</p>
 
     <a class="contact-button"
        href="mailto:YOUR_EMAIL_ADDRESS">
@@ -369,7 +351,6 @@
     </a>
 
   </div>
-
 </section>
 
 
