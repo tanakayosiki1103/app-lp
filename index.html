@@ -3,10 +3,381 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App LP</title>
+
+  <title>RESOANA</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", "Hiragino Kaku Gothic ProN",
+        "Yu Gothic", sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 70px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      margin: 0;
+    }
+
+    .blue-line {
+      width: 190px;
+      height: 3px;
+      background: #27bfd1;
+      margin: 55px auto 12px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    section {
+      padding: 30px 0 70px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 45px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .card {
+      text-align: left;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #eeeeee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 18px;
+    }
+
+    .interior .image-placeholder {
+      aspect-ratio: 16 / 10;
+    }
+
+    .card h3 {
+      font-size: 28px;
+      font-weight: 400;
+      text-align: center;
+      margin: 14px 0 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      margin-top: 0;
+    }
+
+    .profile-title,
+    .contact-title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .small-line {
+      width: 130px;
+      height: 3px;
+      background: #27bfd1;
+      margin: 0 auto 25px;
+    }
+
+    .profile-intro {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .profile-box {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 40px;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .profile-image {
+      aspect-ratio: 4 / 3;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+    }
+
+    .profile-box h3 {
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .contact-button {
+      display: inline-block;
+      background: #27bfd1;
+      color: white;
+      text-decoration: none;
+      padding: 12px 70px;
+      margin-top: 15px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 800px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-box {
+        grid-template-columns: 1fr;
+      }
+
+      h2 {
+        font-size: 27px;
+      }
+
+      .card h3 {
+        font-size: 23px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>アプリ紹介ページ</h1>
-  <p>GitHub Pages テスト公開中です。</p>
+
+<header>
+  <h1>RESOANA</h1>
+
+  <div class="blue-line"></div>
+
+  <p>App Developer　/　designer</p>
+</header>
+
+
+<section>
+  <div class="container">
+
+    <h2>Logo Design</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="image-placeholder">画像1</div>
+
+        <h3>色や質感が統一されている</h3>
+
+        <p>
+          ロゴは、その会社やブランドの「顔」となる大切な要素です。
+          「良いロゴ」とは、その会社の理念や雰囲気、提供する価値を
+          視覚的に伝えられるものであるべきです。
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="image-placeholder">画像2</div>
+
+        <h3>高い技術力</h3>
+
+        <p>
+          業種やターゲットに合ったデザインが大切です。
+          たとえば、IT企業なら未来的でクールな
+          メタリック調のロゴが合います。
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="image-placeholder">画像3</div>
+
+        <h3>シンプルで覚えやすい</h3>
+
+        <p>
+          「いいロゴ」とは、性格を的確に表し、
+          見る人の記憶に残りやすく、
+          用途に応じた表現ができるロゴです。
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="interior">
+
+  <div class="container">
+
+    <h2>Interior Design</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="image-placeholder">画像4</div>
+
+        <h3>穏やかな時間を楽しむ</h3>
+
+        <p>
+          未来的な未知の道を歩むとき、
+          喜びと安心が心を満たします。
+          新しい挑戦に向かって前進することで、
+          自分自身を成長させることができます。
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="image-placeholder">画像5</div>
+
+        <h3>自信と満足、好奇心を呼び覚ます</h3>
+
+        <p>
+          希望に満ちた未来を目指すことで、
+          自信と満足を感じることができます。
+          未来に向かって楽観的に進むことができます。
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="image-placeholder">画像6</div>
+
+        <h3>見た瞬間に感じる心地よい驚き</h3>
+
+        <p>
+          心地よさを感じる空間が、
+          わくわく感を生み出します。
+          穏やかな雰囲気を大切にしています。
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <h2 class="profile-title">Profile</h2>
+
+    <div class="small-line"></div>
+
+    <p class="profile-intro">
+      デザインという仕事に魅了されたのは、
+      幼い頃から心躍る瞬間が多かったからです。
+      新しいプロジェクトに取り組むとき、
+      愛情を持ってデザインをすることで、
+      クライアントやユーザーの心を掴むことができると信じています。
+    </p>
+
+
+    <div class="profile-box">
+
+      <div class="profile-image">
+        Profile Image
+      </div>
+
+      <div>
+
+        <h3>RESOANA</h3>
+
+        <p>Designer / Director</p>
+
+        <p>
+          お客様に安心感を与えることが大切です。
+          心地よさを演出し、
+          より豊かな時間になるような
+          デザイン提案を心がけます。
+        </p>
+
+        <a class="contact-button" href="#contact">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+  <div class="container">
+
+    <h2 class="contact-title">Contact</h2>
+
+    <div class="small-line"></div>
+
+    <p>
+      お問い合わせはこちら
+    </p>
+
+    <a class="contact-button"
+       href="mailto:YOUR_EMAIL_ADDRESS">
+      メールで問い合わせ
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+  Copyright 2026 RESOANA
+</footer>
+
 </body>
 </html>
