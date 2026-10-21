@@ -28,7 +28,7 @@
 
     header {
       text-align: center;
-      padding: 70px 20px 40px;
+      padding: 70px 20px 45px;
     }
 
     header h1 {
@@ -42,20 +42,29 @@
       width: 190px;
       height: 3px;
       background: #27bfd1;
-      margin: 55px auto 12px;
+      margin: 45px auto 12px;
     }
 
     header p {
       font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 20px auto 0;
+      font-size: 16px;
+      color: #555;
     }
 
     section {
-      padding: 30px 0 70px;
+      padding: 45px 0 75px;
     }
 
     h2 {
       font-size: 32px;
-      margin-bottom: 45px;
+      margin: 0 0 40px;
+      font-weight: 500;
     }
 
     .cards {
@@ -69,33 +78,81 @@
       text-align: left;
     }
 
+    /* App */
+
+    .app-card {
+      text-align: center;
+    }
+
+    .app-card img {
+      width: 180px;
+      height: 180px;
+      max-width: 75%;
+      object-fit: cover;
+      border-radius: 38px;
+      display: block;
+      margin: 0 auto 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    }
+
+    .app-card h3 {
+      font-size: 23px;
+      font-weight: 500;
+      line-height: 1.45;
+      margin: 10px 0;
+    }
+
+    .app-card p {
+      font-size: 15px;
+      text-align: left;
+      margin: 0;
+    }
+
+    .app-button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 28px;
+      border: 1px solid #27bfd1;
+      border-radius: 4px;
+      color: #149bad;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .app-button:hover {
+      background: #27bfd1;
+      color: white;
+    }
+
+    /* Logo Design */
+
+    .logo-section {
+      background: #fafafa;
+    }
+
     .logo-card img {
       width: 100%;
       aspect-ratio: 1 / 1;
       object-fit: contain;
       display: block;
-      background: #fff;
+      background: white;
     }
 
-    .interior-card img {
-      width: 100%;
-      aspect-ratio: 16 / 10;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card h3 {
-      font-size: 25px;
+    .logo-card h3 {
+      font-size: 22px;
       font-weight: 400;
       text-align: center;
       line-height: 1.5;
       margin: 16px 0 12px;
     }
 
-    .card p {
-      font-size: 16px;
+    .logo-card p {
+      font-size: 15px;
       margin-top: 0;
     }
+
+    /* Profile */
 
     .profile-title,
     .contact-title {
@@ -139,6 +196,8 @@
       font-weight: 400;
     }
 
+    /* Contact */
+
     .contact {
       text-align: center;
       padding: 80px 20px 100px;
@@ -172,6 +231,7 @@
     }
 
     @media (max-width: 800px) {
+
       header h1 {
         font-size: 32px;
       }
@@ -188,8 +248,13 @@
         font-size: 27px;
       }
 
-      .card h3 {
-        font-size: 22px;
+      .app-card {
+        margin-bottom: 25px;
+      }
+
+      .app-card img {
+        width: 150px;
+        height: 150px;
       }
 
       .contact-button {
@@ -203,15 +268,98 @@
 <body>
 
 <header>
+
   <h1>RESOANA</h1>
 
   <div class="blue-line"></div>
 
-  <p>App Developer　/　designer</p>
+  <p>App Developer / Designer</p>
+
+  <p class="intro">
+    日常を少し楽しく、少し便利にするアプリを中心に、
+    iPhone向けアプリの企画・開発・デザインを行っています。
+  </p>
+
 </header>
 
 
+<!-- App Development -->
+
 <section>
+
+  <div class="container">
+
+    <h2>App Development</h2>
+
+    <div class="cards">
+
+      <div class="card app-card">
+
+        <img src="app1.png" alt="Humorix">
+
+        <h3>Humorix</h3>
+
+        <p>
+          日常の出来事を、少し違った視点から
+          ユーモアのあるエピソードへ変換するアプリです。
+          何気ない失敗や出来事を、会話のネタに変えて楽しめます。
+        </p>
+
+        <a class="app-button" href="#">
+          App Store
+        </a>
+
+      </div>
+
+
+      <div class="card app-card">
+
+        <img src="app2.png" alt="AI人生ゲーム">
+
+        <h3>AI人生ゲーム</h3>
+
+        <p>
+          AIとのやり取りを楽しみながら、
+          人生をテーマにした体験ができるアプリです。
+          音声機能なども取り入れています。
+        </p>
+
+        <a class="app-button" href="#">
+          App Store
+        </a>
+
+      </div>
+
+
+      <div class="card app-card">
+
+        <img src="app3.png" alt="マッチング・フィーリング">
+
+        <h3>マッチング・フィーリング</h3>
+
+        <p>
+          6つの感情をもとに、
+          相手とのフィーリングを楽しむ
+          シンプルなコミュニケーションアプリです。
+        </p>
+
+        <a class="app-button" href="#">
+          App Store
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Logo Design -->
+
+<section class="logo-section">
+
   <div class="container">
 
     <h2>Logo Design</h2>
@@ -219,100 +367,60 @@
     <div class="cards">
 
       <div class="card logo-card">
+
         <img src="angou@2x.jpg" alt="Logo Design 1">
 
         <h3>色や質感が統一されている</h3>
 
         <p>
           ロゴは、その会社やブランドの「顔」となる大切な要素です。
-          「良いロゴ」とは、その会社の理念や雰囲気、提供する価値を
-          視覚的に伝えられるものであるべきです。
+          理念や雰囲気、提供する価値を、
+          視覚的に伝えるデザインを目指しています。
         </p>
+
       </div>
 
 
       <div class="card logo-card">
+
         <img src="logo2.png" alt="Logo Design 2">
 
         <h3>高い技術力</h3>
 
         <p>
-          業種やターゲットに合ったデザインが大切です。
-          たとえば、IT企業なら未来的でクールな
-          メタリック調のロゴが合います。
+          業種やターゲットに合わせて、
+          印象や世界観が自然に伝わる
+          デザインを意識しています。
         </p>
+
       </div>
 
 
       <div class="card logo-card">
+
         <img src="logo3.png" alt="Logo Design 3">
 
         <h3>シンプルで覚えやすい</h3>
 
         <p>
-          「いいロゴ」とは、性格を的確に表し、
-          見る人の記憶に残りやすく、
-          用途に応じた表現ができるロゴです。
+          見た瞬間に印象が残り、
+          幅広い用途で使いやすい
+          シンプルなデザインを大切にしています。
         </p>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 
-<section class="interior">
-  <div class="container">
-
-    <h2>Interior Design</h2>
-
-    <div class="cards">
-
-      <div class="card interior-card">
-        <img src="logo4.jpeg" alt="Interior Design 1">
-
-        <h3>穏やかな時間を楽しむ</h3>
-
-        <p>
-          未来的な未知の道を歩むとき、
-          喜びと安心が心を満たします。
-          新しい挑戦に向かって前進することで、
-          自分自身を成長させることができます。
-        </p>
-      </div>
-
-
-      <div class="card interior-card">
-        <img src="logo5.jpeg" alt="Interior Design 2">
-
-        <h3>自信と満足、好奇心を呼び覚ます</h3>
-
-        <p>
-          希望に満ちた未来を目指すことで、
-          自信と満足を感じることができます。
-          未来に向かって楽観的に進むことができます。
-        </p>
-      </div>
-
-
-      <div class="card interior-card">
-        <img src="logo6.jpeg" alt="Interior Design 3">
-
-        <h3>見た瞬間に感じる心地よい驚き</h3>
-
-        <p>
-          心地よさを感じる空間が、
-          わくわく感を生み出します。
-          穏やかな雰囲気を大切にしています。
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+<!-- Profile -->
 
 <section>
+
   <div class="container">
 
     <h2 class="profile-title">Profile</h2>
@@ -320,11 +428,9 @@
     <div class="small-line"></div>
 
     <p class="profile-intro">
-      デザインという仕事に魅了されたのは、
-      幼い頃から心躍る瞬間が多かったからです。
-      新しいプロジェクトに取り組むとき、
-      愛情を持ってデザインをすることで、
-      クライアントやユーザーの心を掴むことができると信じています。
+      アプリの企画から開発、デザインまで、
+      アイデアを実際に使える形にすることを楽しみながら制作しています。
+      小さなアイデアでも、誰かの日常を少し楽しくできるものを目指しています。
     </p>
 
 
@@ -333,28 +439,34 @@
       <img src="logo7.jpg" alt="RESOANA Profile">
 
       <div>
+
         <h3>RESOANA</h3>
 
-        <p>Designer / Director</p>
+        <p>App Developer / Designer</p>
 
         <p>
-          お客様に安心感を与えることが大切です。
-          心地よさを演出し、
-          より豊かな時間になるような
-          デザイン提案を心がけます。
+          iPhoneアプリを中心に、
+          アイデアの企画、UIデザイン、開発、
+          App Storeでの公開まで個人で行っています。
         </p>
 
         <a class="contact-button" href="#contact">
           Contact
         </a>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 
+<!-- Contact -->
+
 <section id="contact" class="contact">
+
   <div class="container">
 
     <h2 class="contact-title">Contact</h2>
@@ -373,6 +485,7 @@
     </a>
 
   </div>
+
 </section>
 
 
